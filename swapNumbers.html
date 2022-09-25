@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>           
+           document.write("With temp variable"+"<br>");
+           var a=50;
+           var b=30;
+           document.write("Before swapping a="+a+"b="+b+"<br>")
+           var res;
+           res = a; 
+           a =b; b = res;           
+           document.write("After Swapping a="+a+"b="+b+"<br>");
+           document.write("-------------------"+"<br>");
+           document.write("Without temp variable"+"<br>");
+           var a=50;
+           var b=30;
+           a = a +b;
+           b = a-b;
+           a = a-b;                    
+           document.write("After Swapping a="+a+"b="+b+"<br>");
+
+        </script>
+    </head>
+</html>

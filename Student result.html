@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+    <head>
+        <script>
+          var num1=parseInt(prompt("Enter marks for English"));
+          var num2=parseInt(prompt("Enter marks for Maths"));
+          var num3=parseInt(prompt("Enter marks for History"));
+          var num4=parseInt(prompt("Enter marks for Social science"));
+          var num5=parseInt(prompt("Enter marks for computer Technology")); 
+
+          var sum=num1+num2+num3+num4+num5;
+          var percentage = 100/500*sum;          
+
+          alert(percentage);
+
+          if (percentage>=80){
+           alert("Student passed with "+percentage+"%"+"and Grade A");
+          }
+          else if (percentage<80 && percentage>=60){
+            alert("Student passed with "+percentage+"%"+"and Grade B");    
+          }else if (percentage<60 && percentage>=45){
+            alert("Student passed with "+percentage+"%"+"and Grade C");    
+          }else {
+            alert("Student failed")
+          }
+          
+        </script>
+    </head>
+</html>

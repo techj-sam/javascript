@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Program to find out factorial of a given number</title>       
+    </head>
+        <script>
+             var number = parseInt(prompt("Enter number between 1 to 10 to find factorial"));
+             var factorial = 1; 
+             if (number>=1 & number<=10){
+                alert("Factorial of a given number is "+findfactorial(number)); 
+             } else{
+                alert("Sorry. number is not between 1 and 10");
+             }             
+            
+            function findfactorial (number){
+                for (var i=number;i>0;i--){
+                    factorial = i*factorial;
+                }
+                return factorial
+            }                
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Program to reverse number and add digits in it</title>       
+    </head>        
+        <script>
+             var number = parseInt(prompt("Enter number upto 4 digits"));
+             var reminder = 1;
+             var reverseNumber = "";
+             var total=0;         
+            
+             while(number>=1){
+                reminder = number%10;
+                number = Math.floor(number/10);                
+                  reverseNumber = reverseNumber + reminder;
+                  total = total + reminder;
+                             
+             }  
+            alert("Reverse number = "+reverseNumber+" and total of digits is "+total);                  
+        </script>
+    </body>
+</html>
