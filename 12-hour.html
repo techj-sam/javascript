@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Interval Example</title>
+    </head>
+    <h2 style="text-align: center"> 12 Hour - C L O C K</h2>
+    <p id="target" style="text-align: center;"></p>
+        <script>
+               function clock(){
+                 var d=new Date();
+                 var ampm  = d.getHours()<=12? 'am':'pm';
+                 var hours = d.getHours();
+                 hours = hours>12? hours-12:hours;                            
+                 var timer=hours+":"+d.getMinutes()+":"+d.getSeconds()+" "+ampm;
+                 document.getElementById("target").innerHTML=timer;
+               }
+               setInterval(clock,1000)
+        </script>
+</html>
